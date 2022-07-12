@@ -1,0 +1,31 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner	sc = new Scanner(System.in);
+			
+		System.out.print("Digite a hora inicial:");
+		int hr1 = sc.nextInt();
+		
+		System.out.print("Digite a hora final:");
+		int hr2 = sc.nextInt();
+		
+		int duracao;
+		
+		if (hr1 < hr2) {
+			duracao = hr2 - hr1;
+		} else {
+			duracao = 24 - hr1 + hr2;
+		}
+	
+			
+		System.out.println("O jogo durou " + duracao + " horas");
+		
+		sc.close();
+	}
+
+}

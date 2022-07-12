@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner	sc = new Scanner(System.in);
+			
+		System.out.print("Digite um número inteiro:");
+		int num1 = sc.nextInt();
+		
+		System.out.print("Digite outro número inteiro:");
+		int num2 = sc.nextInt();
+		
+		if (num1 / num2 == 0 ) {
+			System.out.print("São multiplos " + num1);
+			
+		} else {
+			System.out.printf("Não são multiplos");
+		}
+		
+		sc.close();
+	}
+
+}

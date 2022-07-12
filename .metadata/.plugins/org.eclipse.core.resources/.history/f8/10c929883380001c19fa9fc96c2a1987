@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner	sc = new Scanner(System.in);
+			
+		
+		int num1 = sc.nextInt();
+		
+		if (num1 < 0) {
+			System.out.printf("O número é negativo: %.2f%n", num1);
+		} else {
+			System.out.printf("O número é positivo: %.2f%n", num1);
+		}
+		
+		
+	
+	
+	
+		sc.close();
+	}
+
+}
